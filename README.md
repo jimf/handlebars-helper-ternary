@@ -26,16 +26,13 @@ var Handlebars = require('handlebars');
 Handlebars.registerHelper('ternary', require('handlebars-helper-ternary'));
 ```
 
-Once registered, templates will have access to the "ternary" helper which
-accepts three arguments: a `test` argument to evaluate for truthiness, a
-`yes` argument to return in the case that `test` is truthy, and a `no`
-argument to return in the case that `test` is falsy.
-
-## Example Templates
-
 **templates/example.handlebars**
 
-Example template file that makes use of the ternary helper.
+Example template file that makes use of the ternary helper.  This helper
+accepts three arguments: a `test` argument to evaluate for truthiness, a `yes`
+argument to return in the case that `test` is truthy, and a `no` argument to
+return in the case that `test` is falsy.
+
 
 ```
 <button type="button">{{ternary isNew "Add" "Save"}}</button>
